@@ -26,12 +26,17 @@ const dataMenu = [
       {
         id: 9,
         path: "/thanh-lap-cong-ty-tnhh",
-        title: "Công ty tnhh",
+        title: "Công ty TNHH",
       },
       {
         id: 21,
         path: "/thanh-lap-cong-ty-nuoc-ngoai",
-        title: "Công ty nước ngoài",
+        title: "Công ty vốn nước ngoài",
+      },
+      {
+        id: 23,
+        path: "/dang-ky-kinh-doanh-ho-ca-the",
+        title: "Hộ kinh doanh cá thể",
       },
     ],
   },

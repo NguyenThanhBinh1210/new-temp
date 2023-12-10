@@ -13,6 +13,7 @@ import HoanThue from "./pages/DichVuKeToanAll/HoanThue";
 import KeToanThueTronGoi from "./pages/DichVuKeToanAll/KeToanTronGoi";
 import DoiDiaChi from "./pages/DoiDiaChi/DoiDiaChi";
 import ThanhLapCongTyNN from "./pages/DichVuThanhLap/ThanhLapCongTyNN/ThanhLapCongTyNN";
+import HoKinhDoanhCaThe from "./pages/DichVuThanhLap/HoKinhDoanhCaThe";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -83,6 +84,14 @@ const router = createBrowserRouter([
     element: (
       <HomeLayout>
         <ThanhLapCongTyNN />
+      </HomeLayout>
+    ),
+  },
+  {
+    path: "/dang-ky-kinh-doanh-ho-ca-the",
+    element: (
+      <HomeLayout>
+        <HoKinhDoanhCaThe />
       </HomeLayout>
     ),
   },

@@ -78,7 +78,7 @@ const Home = () => {
               className="flex gap-x-3 lg:grid lg:grid-cols-2"
             >
               <Link
-                to="/thanh-lap-cong-ty-tnhh" className="relative w-[370px] lg:w-full lg:h-full h-[300px] lg:col-span-1">
+                to="/dang-ky-kinh-doanh-ho-ca-the" className="relative w-[370px] lg:w-full lg:h-full h-[300px] lg:col-span-1">
                 <img
                   className="object-fill"
                   src={Banner3}
