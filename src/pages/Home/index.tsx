@@ -132,11 +132,13 @@ const Home = () => {
             <div className="md:grid md:grid-cols-2 md:gap-x-6">
               <ComponentImg
                 img={HinhDoanhNghiep}
+                link="/thanh-lap-cong-ty-co-phan"
                 describe="Bài viết tập trung phân tích ưu nhược điểm của các loại hình doanh nghiệp tại Việt Nam gồm công ty TNHH 1 thành viên, công ty TNHH 2 thành viên trở lên, công ty cổ phần và doanh nghiệp tư nhân, công ty hợp danh. Nếu có dự định thành lập công ty bạn không thể bỏ qua bài viết này."
                 title="Các loại hình Doanh Nghiệp và ưu nhược điểm - Ngắn, dễ hiểu"
               />
               <ComponentImg
                 img={HayHoKinhDoanh}
+                link="/thanh-lap-cong-ty-co-phan"
                 describe="Bạn nên thành lập công ty hay đăng ký hộ kinh doanh cá thể? Ưu điểm và nhược điểm của từng loại hình này như thế nào? Hiện nay, đăng ký theo loại hình nào thì phổ biến hơn? Đọc xong bài viết này bạn sẽ trả lời được những câu hỏi trên."
                 title="Nên thành lập công ty hay hộ kinh doanh - Đọc xong bạn sẽ BIẾT"
               />
@@ -275,16 +277,17 @@ interface PropsComponentImg {
   img: string;
   describe: string;
   title: string;
+  link?: string
 }
-export const ComponentImg = ({ img, describe, title }: PropsComponentImg) => {
+export const ComponentImg = ({ img, describe, title, link }: PropsComponentImg) => {
   return (
-    <div>
+    <Link to={link || '/'}>
       <div className="mb-2">
         <img src={img || ImageCompany} alt="ádasd" />
       </div>
       <h2 className="border-b py-4 text-[20px] text-[#2a4e9a] mb-2">{title}</h2>
       <p className="text-[#6c757d] mb-8">{describe}</p>
-    </div>
+    </Link>
   );
 };
 export default Home;

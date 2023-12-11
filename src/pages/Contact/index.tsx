@@ -71,7 +71,7 @@ const Contact = () => {
               action="#"
               autoComplete="false"
               ref={formRef}
-              // onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
             >
               <div>
                 <label
